@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory App</title>
+  </head>
+  <link rel="stylesheet" href="1.css" />
+
+  <body>
+    <div class="center">
+      <!-- appbar -->
+      <div class="navbar">
+        <h1>Warehousing Project</h1>
+      </div>
+
+
+      
+      <!-- app content -->
+      <!-- <div class="container"> -->
+      <!-- category form -->
+
+      <section class="category">
+        <div id="category-wrapper">
+          <h2>Add New category</h2>
+          
+            <input
+              type="text"
+              name="category-title"
+              id="category-title"
+              placeholder="title"
+            />
+
+            <textarea
+              class="textarea-category"
+              type=" text"
+              name="category-description"
+              id="category-description"
+              placeholder="description"
+            ></textarea>
+          
+          <div class="category-tesk">
+            <button id="cancel-add-category">Cancel</button>
+
+            <button id="add-new-category">Add Category</button>
+          </div>
+          
+        </div>
+      </section>
+      <!-- product form -->
+      <div class="product-form">
+        <h2>Add New Product</h2>
+        
+          <input
+            type="text"
+            name="product-title"
+            id="product-title"
+            placeholder="tiltle"
+          />
+          <input
+            type="number"
+            name="product-quantity"
+            id="product-quantity"
+            placeholder="quantity"
+          />
+
+          <div class="ww">
+            <label for="product-category" class="ee">
+              category
+            </label>
+            <select name="product-category" id="product-category">
+              <option value="">select a category</option>
+            </select>
+          </div>
+
+          <button id="add-new-product">Add new Product</button>
+        
+      </div>
+      <!-- product-list -->
+
+      <div class="productList">
+        <h3>Product list</h3>
+        <label for="search-input" >search</label>
+        <input type="text" name="search-input" id="search-input" />
+
+        <div class="sort">
+          <label for="sort-products">sort</label>
+          <select name="sort-products" id="sort-products">
+            <option selected value="newest">newest</option>
+            <option value="oldest">oldest</option>
+          </select>
+        </div>
+
+        <div id="products-list"></div>
+        <div class="h-20"></div>
+      </div>
+
+
+
+      <div class="edit">
+        <input type="text" class="titleEdit"  placeholder=" new title"/>
+    <input type="text" class="quanEdit" placeholder="new quantity" />
+    <div>
+      <label for="product-category" >
+        category
+      </label>
+      <select
+        name="product-category"
+        id="product-categoryy">
+        
+        <option value="">
+          select a category
+        </option>
+      </select>
+    </div>
+
+
+<div class="editBtn">
+    <button class="ok">OK</button>
+    <button class="can">cansel</button>
+      </div>
+    </div>
+
+  
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
