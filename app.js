@@ -23,3 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
   //
   ProductView.createProductsList(ProductView.products);
 });
+
+
+const h2= document.querySelector("h2")
+const vgb = document.querySelector(".vgb")
+h2.addEventListener("click",()=>{
+vgb.style.display="flex";
+vgb.style.flexDirection="column";
+})
+
+const cansel = document.querySelector("#cancel-add-category")
+
+cansel.addEventListener("click",()=>{
+  vgb.style.display="none"
+})

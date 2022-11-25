@@ -1,24 +1,4 @@
-const products = [
-    {
-      id: 1,
-      title: "React.js",
-      category: "frontend",
-      createdAt: "2021-10-31T15:02:00.411Z",
-    },
-    {
-      id: 2,
-      title: "Node.js",
-      category: "backend",
-      createdAt: "2021-10-31T15:03:23.556Z",
-    },
-    {
-      id: 3,
-      title: "Vue.js",
-      category: "frontend",
-      createdAt: "2021-11-01T10:47:26.889Z",
-    },
-  ];
-  
+
   const categories = [
     {
       id: 1,
@@ -33,7 +13,7 @@ const products = [
       createdAt: "2021-10-01T10:47:26.889Z",
     },
   ];
-  
+  // console.log(products)
   export default class Storage {
     static getAllCategories() {
       const savedCategories = JSON.parse(localStorage.getItem("category")) || [];
@@ -46,7 +26,7 @@ const products = [
       const savedCategories = Storage.getAllCategories();
       // edit => ... save
       // new => ... save
-      const existedItem = savedCategories.find((c) => c.id === categoryToSave.id);
+      const existedItem = savedCategories.find((c) => c.id == categoryToSave.id);
       if (existedItem) {
         // edit
         existedItem.title = categoryToSave.title;
@@ -71,7 +51,8 @@ const products = [
       });
     }
     static saveProducts(productToSave) {
-      const savedProducts = Storage.getAllProducts();
+      console.log(productToSave)
+      const savedProducts =  Storage.getAllProducts();
       // edit => ... save
       // new => ... save
       const existedItem = savedProducts.find((c) => c.id == productToSave.id);
@@ -91,7 +72,7 @@ const products = [
     static deleteProduct(id) {
       console.log(typeof id);
       const savedProdocuts = Storage.getAllProducts();
-      const filteredProducts = savedProdocuts.filter((p) => p.id !== parseInt(id));
+      const filteredProducts = savedProdocuts.filter((p) => p.id != parseInt(id));
       localStorage.setItem("products", JSON.stringify(filteredProducts));
     }
 
@@ -99,3 +80,6 @@ const products = [
 
     // }
   }
+
+  const ol = JSON.parse(localStorage.getItem("products"))
+  // console.log(ol.find((c)=>c.id===1668966306029))

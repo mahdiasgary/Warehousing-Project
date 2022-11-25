@@ -25,8 +25,8 @@ class CategoryView {
     this.createCategoriesList();
     categoryDescription.value = "";
     categoryTitle.value = "";
-    categoryWrapper.classList.add("hidden");
-    toggleAddCategoryBtn.classList.remove("hidden");
+    // categoryWrapper.classList.add("hidden");
+    // toggleAddCategoryBtn.classList.remove("hidden");
   }
   setApp() {
     this.categories = Storage.getAllCategories();

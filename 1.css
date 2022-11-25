@@ -24,13 +24,15 @@ body{
     flex-direction: column;
 }
 
-#category-wrapper{
+.flex{
     display: flex;
     flex-direction: column;
     padding: 20px;
 
 }
-
+.vgb{
+    display: none;
+}
 .product-form{
     display: flex;
     flex-direction: column;
@@ -42,7 +44,10 @@ body{
     flex-direction: column;
     padding: 20px;
 }
-
+.ddd{
+    display: flex;
+    justify-content: space-between;
+}
 #search-input{
     width: 250px;
 }
@@ -60,7 +65,10 @@ body{
     /* width: 400px; */
     justify-content: space-between;
     border-bottom: #909091 solid .000001px;
-    
+    flex-direction: column;
+}
+.rt{
+    padding-top: 15px;
 }
 .product-tesk{
     display: flex;
@@ -76,12 +84,14 @@ body{
 display: flex;
 justify-content: center;
 }
-
+.edit-mm{
+    color: #86c232;
+}
 input{
     padding: 7px;
     margin: 5px;
     background-color: #222629;
-    border: #86c232 solid .3px;
+    border: #86c232 solid .01px;
     border-radius: 5px;
     width: 100%;
     color: beige;
@@ -93,6 +103,7 @@ textarea{
     border: #86c232 solid .3px;
     border-radius: 5px;
     width: 100%;
+    color: #c7c7c7;
 }
 h1{
     color: #c7c7c7;
@@ -119,6 +130,7 @@ h2{
 }
 #cancel-add-category{
     width: 100px;
+    cursor: pointer;
 }
 
 
@@ -143,6 +155,9 @@ button{
     height: 25px;
     border-radius: 5px;
 
+}
+*{
+    outline: none;
 }
 
 #add-new-product{
@@ -218,4 +233,9 @@ padding-right: 10px;
     align-self: center;
     padding: 1.5px;
     margin-right: 5px;
+}
+
+h2{
+    cursor: pointer;
+    flex-direction:column
 }
