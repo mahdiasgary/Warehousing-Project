@@ -239,3 +239,12 @@ h2{
     cursor: pointer;
     flex-direction:column
 }
+
+#category-title::placeholder{
+    font-family:monospace ;
+    /* color: #86c232; */
+}
+
+input::placeholder{
+    font-family: monospace;
+}
