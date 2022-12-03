@@ -56,8 +56,8 @@ class ProductView {
            
           
         <button 
-        data-product-id=${item.id} class="dell">delete</button>
-        <button data-product-id=${item.id}  class ="editt">Edit</button></div>
+        data-product-id=${item.id} class="dell"><i class="fa-solid fa-trash-can"></i></button>
+        <button data-product-id=${item.id}  class ="editt"><i class="fa-solid fa-pen-to-square"></i></button></div>
      </div>
 <div id=${item.id}></div>
        
